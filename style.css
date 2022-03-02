@@ -21,16 +21,18 @@ div .box {
     position: absolute;
     top: 7%;
     left: 30%;
-    width: 600px;
+    width: 600        px;
+    border: none;
     height: 800px;
     align-items: centers;
-    background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgb(98, 0, 255) 0%, rgb(102, 104, 18) 100%) fixed;
+    background: #e4e4e4;
 }
 
 div .result {
     position: absolute;
     background-color: #afb0b3;
     display: grid;
+    grid-gap: 0px;
     grid-template-columns: 480px 60px 60px;
     top: 0px;
     left: 0px;
@@ -38,15 +40,14 @@ div .result {
 
 div #output {
     position: relative;
-    top: 0px;
-    left: 0px;
-    height: 100px;
+    height: 105px;
     font-size: 90px;
     line-height: 100px;
     padding-left: 10px;
     border: none;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Courier New', Courier, monospace;
-    /* background-color: aqua; */
 
 }
 
@@ -54,14 +55,12 @@ div .grid {
     position: relative;
     top: 200px;
     display: grid;
+    gap: 0px;
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(4, 150px);
 
 }
 
-/* div .1,div .2,div .3,div .4,div .5,div .6,div .7,div .8,div .9,div .point {
-    
-} */
 .grid > .button ,#equals {
     transform: translate(0, -70px);
     border: none;
@@ -72,6 +71,7 @@ div .grid {
     line-height: 150px;
     font-size: 50px;
     height: 150px;
+    grid-gap: 0px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #e4e4e4;    
 }
@@ -84,17 +84,12 @@ div .grid {
 
 div .result button {
     position: relative;
+    padding: 0%;
+    height: auto;
     margin: 0%;
     border: none;
     font-family: 'Courier New', Courier, monospace;
-
-}
-
-.del {
-    position: relative;
-    border-color: #afb0b3;
-    font-family: 'Courier New', Courier, monospace;
-
+    outline: none;
 }
 
 div .result button:hover {
@@ -102,17 +97,18 @@ div .result button:hover {
     background-color: #afb0b3; 
 }
 
+
 #output input {
     position: relative;
-    border: none;
-    top: -5px;
-    left: -10px;
+    border: none; 
     height: 100px;
     width: 600px;
     font-size: 70px;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
+    margin: 0px;
+    border: none;
 }
 
 #output input:focus {
